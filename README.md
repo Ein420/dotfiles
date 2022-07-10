@@ -8,7 +8,7 @@ Picom fork used --> https://github.com/pijulius/picom.git
 
 # i3WM:
 My first tiling window manager.
-Picom workspace transitions/animations work a lot better here imo.
+Picom workspace transitions/animations work differently here compared to AwesomeWM for some reason...
 
 ![2022-07-10-185539_1680x1050_scrot](https://user-images.githubusercontent.com/52751056/178154568-52a6663c-5151-44cc-a5b5-566295639b02.png)
 ![image](https://user-images.githubusercontent.com/52751056/178154667-5df8b980-c4dd-4600-920f-dec6a07dd5fe.png)
