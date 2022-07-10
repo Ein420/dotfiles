@@ -1,5 +1,6 @@
 # dotfiles
 My Arch Linux configuration files of the various software I have used.
+This repo is mainly for my own backup purposes.
 
 Picom fork used --> https://github.com/pijulius/picom.git
 
