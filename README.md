@@ -1,7 +1,8 @@
 # dotfiles
 My Arch Linux configuration files of the various software I have used.
-
 This repo is mainly for my own backup purposes, but I made it public for people to look at or maybe give suggestions/help.
+
+Discord --> Ledah#1217 
 
 Picom fork used --> https://github.com/pijulius/picom.git
 
