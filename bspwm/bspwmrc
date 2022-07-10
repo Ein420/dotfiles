@@ -1,0 +1,37 @@
+#!  /bin/sh
+
+# Autostart!
+pgrep -x sxhkd > /bin/sh || sxhkd &
+picom &
+~/.config/bspwm/polybar/launch.sh &
+nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" &
+feh --bg-fill --randomize ~/Pictures/Wallpapers/* &
+# nitrogen --restore &
+/usr/lib/polkit-kde-authentication-agent-1 &
+xset r rate 255 82 &
+easyeffects -w &&
+imwheel &
+dunst &
+nm-applet &
+
+# Fix alacritty slow resizing
+bspc config pointer_motion_interval 0.0001
+
+# Focus follows cursor
+bspc config focus_follows_pointer true
+
+# App Settings
+bspc rule -a vlc state=floating center=true
+bspc rule -a edge desktop='^2'
+bspc rule -a Dolphin desktop='^3'
+bspc rule -a Discord desktop='^4'
+
+
+# Workspaces
+bspc monitor VGA-0 -d 1 2 3 4 5 6
+
+# Window + Border Options
+bspc config border_width             1
+bspc config window_gap               25
+bspc config split_ratio              0.50
+bspc config border_radius            0
