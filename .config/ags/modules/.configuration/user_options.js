@@ -40,7 +40,7 @@ let configOptions = {
     },
     'search': {
         'engineBaseUrl': "https://www.google.com/search?q=",
-        'excludedSites': ["quora.com"],
+        'excludedSites': [""],
     },
     'time': {
         // See https://docs.gtk.org/glib/method.DateTime.format.html
@@ -53,7 +53,7 @@ let configOptions = {
         'dateFormat': "%d/%m", // On notif time
     },
     'weather': {
-        'city': "",
+        'city': "Cape Town",
     },
     'workspaces': {
         'shown': 10,
@@ -65,6 +65,9 @@ let configOptions = {
             'Code': "visual-studio-code",
             'GitHub Desktop': "github-desktop",
             'Minecraft* 1.20.1': "minecraft",
+            'Minecraft* 1.20.2': "minecraft",
+            'Minecraft* 1.20.3': "minecraft",
+            'Minecraft* 1.20.4': "minecraft",
             'gnome-tweaks': "org.gnome.tweaks",
             'pavucontrol-qt': "pavucontrol",
             'wps': "wps-office2019-kprometheus",
