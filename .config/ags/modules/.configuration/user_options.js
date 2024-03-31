@@ -7,11 +7,17 @@ let configOptions = {
     'ai': {
         'defaultGPTProvider': "openai",
         'defaultTemperature': 0.9,
+        'enhancements': true,
+        'useHistory': true,
         'writingCursor': " ...", // Warning: Using weird characters can mess up Markdown rendering
     },
     'animations': {
+        'choreographyDelay': 35,
         'durationSmall': 110,
         'durationLarge': 180,
+    },
+    'appearance': {
+        'keyboardUseFlag': false, // Use flag emoji instead of abbreviation letters
     },
     'apps': {
         'imageViewer': "loupe",
@@ -20,6 +26,9 @@ let configOptions = {
     'battery': {
         'low': 20,
         'critical': 10,
+        'warnLevels': [20, 15, 5],
+        'warnTitles': ["Low battery", "Very low battery", 'Critical Battery'],
+        'warnMessages': ["Plug in the charger", "You there?", 'PLUG THE CHARGER ALREADY'],
     },
     'music': {
         'preferredPlayer': "plasma-browser-integration",
@@ -37,10 +46,11 @@ let configOptions = {
     'sidebar': {
         'imageColumns': 2,
         'imageBooruCount': 20,
+        'imageAllowNsfw': false,
     },
     'search': {
         'engineBaseUrl': "https://www.google.com/search?q=",
-        'excludedSites': [""],
+        'excludedSites': [],
     },
     'time': {
         // See https://docs.gtk.org/glib/method.DateTime.format.html
@@ -53,7 +63,7 @@ let configOptions = {
         'dateFormat': "%d/%m", // On notif time
     },
     'weather': {
-        'city': "Cape Town",
+        'city': "",
     },
     'workspaces': {
         'shown': 10,
@@ -65,9 +75,6 @@ let configOptions = {
             'Code': "visual-studio-code",
             'GitHub Desktop': "github-desktop",
             'Minecraft* 1.20.1': "minecraft",
-            'Minecraft* 1.20.2': "minecraft",
-            'Minecraft* 1.20.3': "minecraft",
-            'Minecraft* 1.20.4': "minecraft",
             'gnome-tweaks': "org.gnome.tweaks",
             'pavucontrol-qt': "pavucontrol",
             'wps': "wps-office2019-kprometheus",
@@ -86,6 +93,10 @@ let configOptions = {
         },
         'sidebar': {
             'apis': {
+                'nextTab': "Page_Down",
+                'prevTab': "Page_Up",
+            },
+            'options': { // Right sidebar
                 'nextTab': "Page_Down",
                 'prevTab': "Page_Up",
             },

@@ -6,6 +6,7 @@ import App from 'resource:///com/github/Aylur/ags/app.js'
 import * as Utils from 'resource:///com/github/Aylur/ags/utils.js'
 // Stuff
 import userOptions from './modules/.configuration/user_options.js';
+import { firstRunWelcome } from './services/messages.js';
 // Widgets
 import { Bar, BarCornerTopleft, BarCornerTopright } from './modules/bar/main.js';
 import Cheatsheet from './modules/cheatsheet/main.js';
@@ -48,7 +49,7 @@ const Windows = () => [
     SideRight(),
     Osk(),
     Session(),
-    // forMonitors(Bar),
+    forMonitors(Bar),
     // forMonitors(BarCornerTopleft),
     // forMonitors(BarCornerTopright),
     forMonitors((id) => Corner(id, 'top left')),
@@ -72,6 +73,6 @@ App.config({
 // Bar().catch(print); // Use this to debug the bar. Single monitor only.
 // BarCornerTopleft().catch(print); // Use this to debug the bar. Single monitor only.
 // BarCornerTopright().catch(print); // Use this to debug the bar. Single monitor only.
-forMonitors(Bar);
+// forMonitors(Bar);
 forMonitors(BarCornerTopleft);
 forMonitors(BarCornerTopright);
