@@ -9,10 +9,10 @@ file="Screenshot_${time}_${RANDOM}.png"
 # notify and view screenshot
 notify_cmd_shot="notify-send -h string:x-canonical-private-synchronous:shot-notify -u low -i ${iDIR}/picture.png"
 notify_view() {
-	${notify_cmd_shot} "Copied to clipboard."
-##	viewnior ${dir}/"$file"
+	#	${notify_cmd_shot} "Copied to clipboard."
+	##	viewnior ${dir}/"$file"
 	if [[ -e "$dir/$file" ]]; then
-		${notify_cmd_shot} "Screenshot Saved."
+		${notify_cmd_shot} "Screenshot Saved & Copied to Clipboard."
 	else
 		${notify_cmd_shot} "Screenshot Deleted."
 	fi
