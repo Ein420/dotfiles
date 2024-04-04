@@ -75,8 +75,8 @@ export const keybindList = [[
             { "keys": ["", "Ctrl", "+", "S"], "action": "Screen snip focused window  >>  clipboard" },
             { "keys": ["", "+", "S"], "action": "Screen snip region  >>  clipboard" },
             { "keys": ["", "Shift", "+", "T"], "action": "Image to text  >>  clipboard" },
-            { "keys": ["", "Shift", "+", "C"], "action": "Color picker" },
-            { "keys": ["", "Alt", "+", "R"], "action": "Record region" },
+            { "keys": ["", "Shift", "+", "A"], "action": "Color picker" },
+            { "keys": ["", "Alt", "+", "R"], "action": "Record region with sound" },
             { "keys": ["Ctrl", "Alt", "+", "R"], "action": "Record screen without sound" },
             { "keys": ["", "Shift", "Alt", "+", "R"], "action": "Record screen with sound" }
         ],
